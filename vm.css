@@ -1,0 +1,65 @@
+:root {
+    --gray: #282626;
+}
+
+body {
+    color: white;
+    background-color: var(--gray);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+textarea {
+    color: whitesmoke;
+    background-color: var(--gray);
+    font-size: x-large;
+    padding-bottom: 20px;
+}
+
+button {
+    font-size: smaller;
+}
+
+.slider { 
+    appearance: none;
+    width: 300px;
+    outline: none;
+    margin-top: 25px;
+}
+
+.regbox {
+    font-size: larger;
+    outline: 2px solid whitesmoke;
+    padding: 8px;
+}
+
+.instruction {
+    padding: 2px;
+    font-size: larger;
+}
+
+#instructionOutput {
+    position: absolute;
+    left: 33%;
+    top: 0%;
+}
+
+#error {
+    font-size: x-large;
+    padding: 20px;
+}
+
+#registerTable {
+    position: absolute;
+    left: 66%;
+    top: 2%;
+}
+
+#currentLine {
+    outline: 2px dashed whitesmoke;
+    background: rgb(26, 25, 25)
+}
+
+#info {
+    width: 330px;
+    margin-top: 20px;
+}

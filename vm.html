@@ -1,0 +1,38 @@
+<!--Author: Arya Burke-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>MIPS Virtual Machine</title>
+<script src="vm.js"></script>
+<link rel="stylesheet" type='text/css'href="vm.css">
+</head>
+
+<body onload="init();">
+
+  <textarea id="inbound" rows="17" cols="25"></textarea>
+  <div id="info">To create a breakpoint, start a line with ~, such as ~add. 
+    The simulation will pause at these points.</div>
+  <div class="slidecontainer">
+    <input type="range" min=".001" max="5001" value=".001" class="slider" id="speedSlider">
+  </div>
+
+  <p id="speedText">SPEED:</p>
+
+  <p>
+    <button id="assemble" onclick="assembleButton();" autocomplete="off">ASSEMBLE</button>
+    <button id="run" onclick="runButton();" disabled autocomplete="off">RUN</button>
+    <button id="step" onclick="stepButton();" disabled autocomplete="off">STEP</button>
+  </p>
+  <p>
+    <button id= "ulam" onclick="ulamButton();" autocomplete="off">FILL ULAM EXAMPLE (erases current code!)</button>
+  </p>
+
+  <div>
+    <p id="error"></p>
+    <table id="registerTable"></table>
+  </div>
+
+  <div id="instructionOutput"></div>
+
+</body>
+</html>
